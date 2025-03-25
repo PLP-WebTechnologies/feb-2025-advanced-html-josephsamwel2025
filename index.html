@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Task - Contacts & Registration</title>
+    <link rel="stylesheet" href="style.css"> <!-- External CSS can be added if needed -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to My Web Page</h1>
+        <p>A simple HTML5 page with an ordered list, table, and registration form.</p>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+
+        <!-- Ordered List with Roman Numerals -->
+        <section>
+            <h2>Ordered List (Roman Numerals)</h2>
+            <ol type="I">
+                <li>Names</li>
+                <li>Address</li>
+                <li>Mobile Number</li>
+                <li>Email</li>
+                <li>more info</li>
+            </ol>
+        </section>
+
+        <!-- External Image from Pexels -->
+        <section>
+            <h2>External Image</h2>
+            <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Beautiful Nature Scene" width="600">
+        </section>
+
+        <!-- Table of Contacts -->
+        <section>
+            <h2>Contact List</h2>
+            <table border="1" cellspacing="0" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Mobile</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice Johnson</td>
+                        <td>123 Maple Street</td>
+                        <td>+1 123-456-7890</td>
+                        <td>alice@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>456 Oak Avenue</td>
+                        <td>+1 987-654-3210</td>
+                        <td>bob@yahoo.com</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie Brown</td>
+                        <td>789 Pine Lane</td>
+                        <td>+1 555-555-5555</td>
+                        <td>charlie654@icloud.com</td>
+                    </tr>
+                    <tr>
+                        <td>Diana Ross</td>
+                        <td>321 Elm Boulevard</td>
+                        <td>+1 444-444-4444</td>
+                        <td>diana632@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Edward Taylor</td>
+                        <td>987 Birch Road</td>
+                        <td>+1 333-333-3333</td>
+                        <td>edward365@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Form -->
+        <section>
+            <h2>Registration Form</h2>
+            <form action="/submit-form" method="POST">
+
+                <!-- Name Field -->
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <!-- Email Field -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <!-- Password Field -->
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" minlength="6" required>
+
+                <!-- Date Field -->
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+
+                <!-- Dropdown -->
+                <label for="country">Country:</label>
+                <select id="country" name="country" required>
+                    <option value="">Select your country</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                </select>
+
+                <!-- Radio Buttons -->
+                <p>Gender:</p>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other" required>
+                <label for="other">Other</label>
+
+                <!-- Checkboxes -->
+                <p>Interests:</p>
+                <input type="checkbox" id="sports" name="interests" value="sports">
+                <label for="sports">Sports</label>
+                <input type="checkbox" id="music" name="interests" value="music">
+                <label for="music">Music</label>
+                <input type="checkbox" id="travel" name="interests" value="travel">
+                <label for="travel">Travel</label>
+
+                <!-- Submit Button -->
+                <button type="submit">Register</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Web Development. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
